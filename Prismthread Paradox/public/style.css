@@ -1,0 +1,36 @@
+:root {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  color-scheme: dark;
+  background-color: #05060a;
+  color: #f5f8ff;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at 20% 20%, rgba(87, 144, 255, 0.2), transparent 60%),
+    radial-gradient(circle at 80% 80%, rgba(248, 131, 211, 0.2), transparent 55%), #05060a;
+}
+
+canvas#game {
+  width: min(90vw, 1280px);
+  height: min(90vh, 720px);
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(20, 12, 48, 0.7);
+  outline: none;
+  background: #030308;
+}
+
+#ui-root {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  font-size: 16px;
+}
+
+#ui-root * {
+  pointer-events: auto;
+}
